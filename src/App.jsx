@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import {romanceBooks,thrillerBooks} from "./data/Books";
 import Result from "./components/Result";
 import Pending from "./components/PendingList";
+import Roulette from "./components/Roulette";
+import "./App.css";
 function App() {
   const [genre, setGenre] = useState("");
   const [selectedBook, setSelectedBook] = useState(null);
@@ -53,6 +55,9 @@ function App() {
       </> ):(
       <>
         <h1>Ready to Spin</h1>
+        <Roulette
+          options={genre === "Romance"? romanceBooks : thrillerBooks}
+          onResult={setSelectedBook}/>
         <button onClick={handleSpin}>Spin</button>
         {selectedBook && <Result book={selectedBook}/>}
         <button onClick={()=> setShowPendings(!showPendings)}>
