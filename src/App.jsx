@@ -57,6 +57,7 @@ function App() {
         <h1>Ready to Spin</h1>
         <Roulette
           options={genre === "Romance"? romanceBooks : thrillerBooks}
+          genre ={genre}
           onResult={setSelectedBook}/>
         <button onClick={handleSpin}>Spin</button>
         {selectedBook && <Result book={selectedBook}/>}

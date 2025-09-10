@@ -17,12 +17,6 @@
   width: 100%;     
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  background: conic-gradient(
-    red 0deg 90deg, 
-    blue 90deg 180deg, 
-    green 180deg 270deg, 
-    yellow 270deg 360deg
-  );
   border: 5px solid #FFC107;
   transition: transform 4s ease-out;
   box-shadow: 10px 5px 5px rgb(123, 123, 123);
