@@ -1,9 +1,9 @@
 import React from 'react'
 
-function PendingList({books}) {
+function PendingList({books, genre}) {
     
   return (
-    <div>
+    <div className={`pending-card ${genre.toLowerCase()}`}>
         <h2>Pending books</h2>
         {books.length === 0?(
             <p>No books added yet...</p>

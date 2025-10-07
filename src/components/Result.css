@@ -1,0 +1,20 @@
+.title-book.romance{
+  color: #d63384;
+  font-family: 'Playfair Display', serif;
+}
+.author-book.romance{
+  color: #6a0572;
+  font-style: italic;
+  font-family: 'Nunito', sans-serif;
+}
+
+.title-book.thriller{
+  color: #e11d48;
+  font-family: 'Oswald', sans-serif;
+}
+
+.author-book.thriller{
+  color: #9ca3af;
+  font-weight: 300;
+  font-family: 'Roboto Condensed', sans-serif;
+}

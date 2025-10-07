@@ -1,9 +1,8 @@
-.app {
+.roulette-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;  
-  align-items: center;      
-  height: 100vh;   
+  align-items: center;         
   gap: 60px;         
 }
 
@@ -39,25 +38,9 @@
 .pointer.shaking{
     animation: shake 0.2s infinite;
 }
-.btn-start{
-    color: #FFC107;
-    font-size: 1.5em;
-    padding: 10px 24px;
-    border-radius: 8px;
-    box-shadow: 0px 5px 5px rgb(123, 123, 123);
-    cursor: pointer;
-}
-.btn-start.blocking{
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-.btn-start:hover{
-    font-size: 1.7em;
-}
-.result{
-    font-size: 2em;
-    color: black;
-}
+
+
+
 @keyframes shake{
   0%   { transform: translateX(-50%) rotate(0deg); }
   25%  { transform: translateX(-52%) rotate(-2deg); }
